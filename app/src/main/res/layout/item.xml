@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Button
+        android:id="@+id/StateColor_Button"
+        android:layout_width="10dp"
+        android:layout_height="wrap_content"
+        android:background="#FF00"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignBottom="@+id/DueDay_TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="[補休]"
+        android:id="@+id/VacationType_TextView"
+        android:layout_column="2"
+        android:layout_row="0"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/Reason_TextView"
+        android:layout_alignStart="@+id/Reason_TextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="支援活動"
+        android:id="@+id/Reason_TextView"
+        android:layout_column="2"
+        android:layout_row="1"
+        android:layout_below="@+id/VacationType_TextView"
+        android:layout_toRightOf="@+id/Remain_TextView"
+        android:layout_toEndOf="@+id/Remain_TextView"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="4"
+        android:textSize="50dp"
+        android:id="@+id/Remain_TextView"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/StateColor_Button"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_alignBottom="@+id/DueDay_TextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="使用"
+        android:id="@+id/Use_Button"
+        android:visibility="gone"
+        android:layout_toLeftOf="@+id/Delete_Button"
+        android:layout_alignBottom="@+id/DueDay_TextView"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="刪除"
+        android:id="@+id/Delete_Button"
+        android:visibility="gone"
+        android:layout_alignBottom="@+id/DueDay_TextView"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="到期日期:2015/01/01"
+        android:id="@+id/DueDay_TextView"
+        android:layout_below="@+id/Reason_TextView"
+        android:layout_alignLeft="@+id/Reason_TextView"
+        android:layout_alignStart="@+id/Reason_TextView" />
+
+</RelativeLayout>
